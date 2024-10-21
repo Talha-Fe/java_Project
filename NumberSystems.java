@@ -39,17 +39,29 @@ public class NumberSystems {
 				b7 = b7 * (int) Math.pow(2, 6);
 				b8 = b8 * (int) Math.pow(2, 7);
 				
-				System.out.print("Decimal Result: ");
+				System.out.println("Decimal Result: ");
 				System.out.println(b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8);
 				
 			}
 			
 			else if(choice_BD == 2) {
 				
+				System.out.println("Please type an decimal code(DO NOT type higher then 255!): ");
+				int decToBin = userIn.nextInt();
+				int resutBin = decToBin;
+				
+				while(decToBin > 0) {
+					
+					
+					
+				}
+				
 			}
 			
 			else {
+				
 				System.out.println("Error! Please use only 1 or 2.");
+				
 			}
 		}
 		
