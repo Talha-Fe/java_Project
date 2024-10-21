@@ -40,8 +40,10 @@ public class NumberSystems {
 				b7 = b7 * (int) Math.pow(2, 6);
 				b8 = b8 * (int) Math.pow(2, 7);
 				
+				final int result = b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8;
+				
 				System.out.println("Decimal Result: ");
-				System.out.println(b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8);
+				System.out.println(result);
 				
 			}
 			
@@ -89,41 +91,37 @@ public class NumberSystems {
 				
 				System.out.println("Please type an binary code(DO NOT type higher then 1 BYTE!): ");
 				int binToHex = userIn.nextInt(); 
+
+				int b1 = binToHex            % 10; // 2^0
+				int b2 = binToHex / 10       % 10; 
+				int b3 = binToHex / 100      % 10;
+				int b4 = binToHex / 1000     % 10;
+				int b5 = binToHex / 10000    % 10;
+				int b6 = binToHex / 100000   % 10;
+				int b7 = binToHex / 1000000  % 10;
+				int b8 = binToHex / 10000000 % 10; //2^7
+						
+				b1 = b1 * (int) Math.pow(2, 0);
+				b2 = b2 * (int) Math.pow(2, 1);
+				b3 = b3 * (int) Math.pow(2, 2);
+				b4 = b4 * (int) Math.pow(2, 3);
+				b5 = b5 * (int) Math.pow(2, 4);
+				b6 = b6 * (int) Math.pow(2, 5);
+				b7 = b7 * (int) Math.pow(2, 6);
+				b8 = b8 * (int) Math.pow(2, 7);
 				
-			 String H10 = "A";
-				String H11 = "B";
-				String H12 = "C";
-				String H13 = "D";
-				String H14 = "E";
-				String H15 = "F";
+				int decimalResult = b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8;
 				
-				int r1 = binToHex            % 10; // 2^0
-				int r2 = binToHex / 10       % 10; 
-				int r3 = binToHex / 100      % 10;
-				int r4 = binToHex / 1000     % 10;
-				int l1 = binToHex / 10000    % 10;
-				int l2 = binToHex / 100000   % 10;
-				int l3 = binToHex / 1000000  % 10;
-				int l4 = binToHex / 10000000 % 10; //2^7
+				String hexDecimal = Integer.toHexString(decimalResult);
+				hexDecimal = hexDecimal.toUpperCase();
 				
-				r1 = r1 * (int) Math.pow(2, 0);
-				r2 = r2 * (int) Math.pow(2, 1);
-				r3 = r3 * (int) Math.pow(2, 2);
-				r4 = r4 * (int) Math.pow(2, 3);
-				
-				l1 = l4 * (int) Math.pow(2, 0);
-				l2 = l2 * (int) Math.pow(2, 1);
-				l3 = l3 * (int) Math.pow(2, 2);
-				l4 = l4 * (int) Math.pow(2, 3);
-				
-				int hexaDecR = r1 + r2 + r3 + r4; //right side of the hex 
-				int hexaDecL = l1 + l2 + l3 + l4; //left side of the bin
-				
-				System.out.println("Hexadecimal Result: ");
-				
+				System.out.println("Hexadecimal Result: " + hexDecimal);
+							
 			}
 			
 			else if(choice_BH == 2) {
+				
+				
 				
 			}
 			
@@ -138,6 +136,7 @@ public class NumberSystems {
 		
 		// HexDec
 		else if(choice == 3) {
+			
 			
 		}
 		
