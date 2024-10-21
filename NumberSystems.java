@@ -58,14 +58,14 @@ public class NumberSystems {
 				int g; //  I
 				int h; //right side
 					
-				a = decToBin       % 2;
-				b = decToBin / 2   % 2;
-				c = decToBin / 4   % 2;
-				d = decToBin / 8   % 2;
-				e = decToBin / 16  % 2;
-				f = decToBin / 32  % 2;
-				g = decToBin / 64  % 2;
-				h = decToBin / 128 % 2;
+				h = decToBin       % 2;
+				g = decToBin / 2   % 2;
+				f = decToBin / 4   % 2;
+				e = decToBin / 8   % 2;
+				d = decToBin / 16  % 2;
+				c = decToBin / 32  % 2;
+				b = decToBin / 64  % 2;
+				a = decToBin / 128 % 2;
 					
 				System.out.println("Binary Result: " + a + b + c + d + e + f + g + h);
 				
