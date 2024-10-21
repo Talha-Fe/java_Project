@@ -90,7 +90,7 @@ public class NumberSystems {
 				System.out.println("Please type an binary code(DO NOT type higher then 1 BYTE!): ");
 				int binToHex = userIn.nextInt(); 
 				
-			    String H10 = "A";
+			 String H10 = "A";
 				String H11 = "B";
 				String H12 = "C";
 				String H13 = "D";
