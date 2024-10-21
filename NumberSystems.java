@@ -39,6 +39,7 @@ public class NumberSystems {
 				b7 = b7 * (int) Math.pow(2, 6);
 				b8 = b8 * (int) Math.pow(2, 7);
 				
+				System.out.print("Decimal Result: ");
 				System.out.println(b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8);
 				
 			}
