@@ -22,6 +22,15 @@ public class NumberSystems {
 				System.out.println("Please type an binary code(DO NOT type higher then 1 BYTE!): ");
 				int binToDec = userIn.nextInt(); 
 				
+				//ERROR
+				if(binToDec > 11111111) {
+					
+					System.out.println("Error Please Type 1Byte code.");
+					
+					return;
+					
+				}
+				
 				int b1 = binToDec            % 10; // 2^0
 				int b2 = binToDec / 10       % 10; 
 				int b3 = binToDec / 100      % 10;
@@ -52,6 +61,7 @@ public class NumberSystems {
 				System.out.println("Please type an decimal code(DO NOT type higher then 256!): ");
 				int decToBin = userIn.nextInt();
 				
+				//ERROR
 				if(decToBin > 256) {
 					
 					System.out.println("Error Please Type Between 0 and 256");
@@ -101,6 +111,7 @@ public class NumberSystems {
 				System.out.println("Please type an binary code(DO NOT type higher then 1 BYTE!): ");
 				int binToHex = userIn.nextInt(); 
 
+				//ERROR
 				if(binToHex > 11111111) {
 					
 					System.out.println("Error Please Type 1Byte code.");
@@ -138,7 +149,12 @@ public class NumberSystems {
 			
 			else if(choice_BH == 2) {
 			
+				System.out.println("Please type an Hexadecimal code(DO NOT type higher then FF!): ");
 				
+				String hexInput = userIn.next();
+				int hexToBin = Integer.parseInt(hexInput, 16);
+				
+				System.out.println("Binary Result: " + hexToBin);
 				
 			}
 			
@@ -162,6 +178,7 @@ public class NumberSystems {
 				System.out.println("Please type an decimal code(DO NOT type higher then 256!): ");
 				int decToHex = userIn.nextInt(); 
 				
+				//ERROR
 				if(decToHex > 256) {
 					
 					System.out.println("Error Please Type Between 0 and 256");
@@ -179,7 +196,12 @@ public class NumberSystems {
 			
 			else if(choice_HD == 2) {
 				
+				System.out.println("Please type an Hexadecimal code(DO NOT type higher then FF!): ");
 				
+				String hexInput = userIn.next();
+				int hexToDec = Integer.parseInt(hexInput, 16);
+				
+				System.out.println("Decimal Result: " + hexToDec);
 				
 			}
 			
