@@ -3,7 +3,17 @@ package week03.theory;
 import java.util.Scanner;
 
 public class NumberSystems {
+	
+//  _              $$\     $$\ $$\       $$\                               
+// | |             $$ |    $$ |$$ |      \__|                              
+// | |__  _   _  $$$$$$\   $$ |$$$$$$$\  $$\  $$$$$$\   $$$$$$\  $$$$$$$\  
+// | '_ \| | | | \_$$  _|  $$ |$$  __$$\ $$ |$$  __$$\ $$  __$$\ $$  __$$\ 
+// | |_) | |_| |   $$ |    $$ |$$ |  $$ |$$ |$$ |  \__|$$ /  $$ |$$ |  $$ |
+// |_.__/ \__, |   $$ |$$\ $$ |$$ |  $$ |$$ |$$ |      $$ |  $$ |$$ |  $$ |
+//         __/ |   \$$$$  |$$ |$$ |  $$ |$$ |$$ |      \$$$$$$  |$$ |  $$ |
+//        |___/     \____/ \__|\__|  \__|\__|\__|       \______/ \__|  \__|
 
+	
 	public static void main(String[] args) {
 		
 		Scanner userIn = new Scanner(System.in);
@@ -14,7 +24,7 @@ public class NumberSystems {
 		// BinDec
 		if(choice == 1) {
 			
-			System.out.println("Binary to Decimal(1) # Decimal to Binary(2)");
+			System.out.println("Binary to Decimal(1) # Decimal to Binary(2)"); //
 			int choice_BD = userIn.nextInt();
 			
 			if(choice_BD == 1) {
